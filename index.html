@@ -1,16 +1,24 @@
-
-<html>
-    <head>
-        <title>A Complex Webpage</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <p>
-            Wie heisst Du? <input id="inName" maxlength="15">
-            <button id="btnSubmit">Submit</button>
-        </p>
-        <h1 id="Hallo"></h1>
-				<h2 id="Wie geht's Dir?"></h2>
-        <script src="./index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zwei-Seiten iFrame Beispiel</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+    }
+    iframe {
+      width: 50%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://chat.openai.com" allowfullscreen></iframe>
+  <iframe src="https://teams.microsoft.com/_" allowfullscreen></iframe>
+</body>
 </html>
